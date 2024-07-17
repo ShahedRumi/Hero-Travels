@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --color2: #FF5400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.btn{
+    background-color: var(--color2);
+    border-radius: 8px;
+    padding:14px 30px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.7);
+}
+/* ============================================ */
+.icon{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.icon span, .active{
+    color: var(--color2);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 25px auto;
+}
+.navbar nav{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    margin-left: 30px;
+}
+/* =================================================== */
+.banner h1{
+    font-size: 64px;
+    font-weight: 800;
+    color: white;
+}
+.banner p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+ .banner input, .banner select {
+    width: 174px;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.5);
+    outline: none;
+}
+::placeholder{
+    color: rgba(19, 19, 24, 0.5);
+}
+.banner button{
+    width: 174px;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--color2);
+}
+form{
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    gap: 24px;
+}
+.banner{
+    height: 500px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-content{
+    width: 70%;
+}
+.banner-content>*{
+    margin-bottom: 24px;
+}
+/* ========================================================================= */
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-tour div{
+    width: 47%;
+}
+.popular-text>*{
+    margin-bottom: 24px;
+}
+.popular-text li{
+    margin-bottom: 16px;
+}
+/* ================================================================= */
+.destination-text>*, .service-text>*{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.place{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.places{
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 24px;
+}
+.place1{
+    grid-column:1/span 6;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place2{
+    grid-column:7/span 6;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 8.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place3{
+    grid-column:1/span 4;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 6.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place4{
+    grid-column:5/span 5;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 7.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place5{
+    grid-column:10/span 3;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 9.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place6{
+    grid-column:1/span 5;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.place7{
+    grid-column:6/span 7;
+    background:linear-gradient(90deg,rgba(19, 19, 24, 0.2),rgba(19, 19, 24, 0.2)), url('Images/Rectangle\ 10.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* ================================================================= */
+.all-services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.service3 {
+    grid-column: 1 / 3; 
+    justify-self: center; 
+    width: calc(50% - 12px); 
+}
+.service{
+    border: 1px solid black;
+    padding: 32px;
+    border-radius: 16px;
+}
+.service img{
+    width: 50px;
+}
+.service>*{
+    margin-bottom: 16px;
+}
+.service1{
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+}
+.service2{
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+}
+.service3{
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+}
